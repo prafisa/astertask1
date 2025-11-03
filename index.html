@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+            background-color: red;
+            color: white;
+        }
+        button:active{
+            background-color: blue;
+            color: gray;
+        }
+        button:focus{
+            border: 2px solid purple;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: black;
+        }
+        ul li:first-child{
+            font-weight: bold;
+            background-color: aqua;
+        }
+        ul li:last-child{
+            font-style: italic;
+            background-color: brown;
+        }
+        ul li:nth-child(odd){
+            background-color: gray;
+        }
+        ul li:nth-child(){
+            background-color: rgb(231, 169, 93);
+        }
+        div{
+            margin-top: 20px;
+        }
+        input:focus{
+            border-color: green;
+            outline: none;
+        }
+        input:checked{
+            accent-color: red;
+        }
+        input:disabled{
+            background-color: aqua;
+        }
+        div:has(h2+p){
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- exercise1 -->
+    <div>
+        <button>Click</button>
+        <button>Click</button>
+        <button>Click</button>
+    </div>
+
+    <!-- exercise2 -->
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://mail.google.com/mail/u/0/">Gmail</a>
+    <a href="https://github.com/">Github</a>
+    <a href="https://www.youtube.com/">Youtube</a>
+
+    <!-- exercise3 -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <!-- exercise4 -->
+     <form method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" value="name">
+            
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" value="email">
+            
+            <br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="male" value="male">Male
+            <input type="radio" name="female"value="female">Female
+            <input type="radio" name="other" value="other">Other
+            
+            <br><br>
+        
+            <label for="hobbies">Hobbies</label>
+            <input type="checkbox" name="sports" value="sports">Sports
+            <input type="checkbox" name="reading" value="reading">Reading
+            <input type="checkbox" name="movies" value="movies">Movies
+        </div>
+
+        </form>
+
+        <!-- exercise5 -->
+        <div>
+            <h2>Aster Innovations</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, dolorem, suscipit nisi porro accusantium a cupiditate itaque est quos quae laudantium nulla esse, voluptatum neque iure ipsum iusto reprehenderit totam!</p>
+        </div>
+
+
+</body>
+</html>
